@@ -1,0 +1,23 @@
+{
+  "name": "bookshop",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/cds": "^7",
+    "express": "^4",
+    "@sap/xssec": "^3"
+  },
+  "devDependencies": {
+    "@sap/cds-dk": "^7"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch": "cds watch",
+    "build": "mbt build",
+    "deploy": "cf deploy mta_archives/bookshop_1.0.0.mtar"
+  }
+}

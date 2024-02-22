@@ -1,0 +1,20 @@
+{
+  "requires": {
+    "db": {
+      "[development]": {
+        "kind": "sqlite",
+        "credentials": { "url": "db.sqlite" }
+      },
+      "[production]": {
+        "kind": "sqlite",
+        "impl": "@cap-js/sqlite",
+        "credentials": {
+          "database": ":memory:"
+        }
+      }
+    }
+  },
+  "features": {
+    "fiori_preview": true
+  }
+}
